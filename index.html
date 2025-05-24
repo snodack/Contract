@@ -2,79 +2,82 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Ретро-вейв контакт</title>
+  <title>Neon Network</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
     body {
-      background: linear-gradient(to bottom, #1a0033, #330066, #660099);
+      background-color: #0d001a;
       color: #ff66cc;
       font-family: 'Press Start 2P', cursive;
-      text-align: center;
-      padding: 50px;
-      background-image: url('https://i.imgur.com/fxWzYmj.png');
-      background-size: cover;
-      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    .container {
+      display: flex;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff00ff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff00ff;
     }
 
-    .link-block {
-      margin: 30px 0;
+    .gif-container {
+      margin-right: 30px;
     }
 
-    a {
+    .gif-container img {
+      width: 240px;
+      height: auto;
+      border: 2px solid #00ffff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .links a {
       color: #00ffff;
       text-decoration: none;
-      font-size: 14px;
+      margin: 10px 0;
       text-shadow: 0 0 5px #00ffff;
       transition: 0.3s;
-      display: inline-block;
     }
 
-    a:hover {
+    .links a:hover {
       color: #ffcc00;
       text-shadow: 0 0 10px #ffcc00;
       transform: scale(1.1);
     }
 
-    .emoji {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 12px;
-      color: #999;
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 0 0 10px #ff00ff;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 CONNECT WITH THE FUTURE</h1>
-  <p>Добро пожаловать в мою неон-вселенную.</p>
-
-  <div class="link-block">
-    <p class="emoji">💻</p>
-    <a href="https://github.com/snodack" target="_blank">GitHub — код на скорости света</a>
+  <div class="container">
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" alt="Neon GIF">
+    </div>
+    <div class="links">
+      <h1>🔮 CONNECT WITH ME</h1>
+      <a href="https://github.com/snodack" target="_blank">💻 GitHub</a>
+      <a href="https://t.me/alpha_gospel" target="_blank">📟 Telegram</a>
+      <a href="https://www.instagram.com/gostovskyy/" target="_blank">📸 Instagram</a>
+    </div>
   </div>
-
-  <div class="link-block">
-    <p class="emoji">📟</p>
-    <a href="https://t.me/alpha_gospel" target="_blank">Telegram — @alpha_gospel в эфире</a>
-  </div>
-
-  <div class="link-block">
-    <p class="emoji">📸</p>
-    <a href="https://www.instagram.com/gostovskyy/" target="_blank">Instagram — пиксели страсти</a>
-  </div>
-
-  <footer>
-    © 198X-2025 // Powered by synth & dreams
-  </footer>
 </body>
 </html>
